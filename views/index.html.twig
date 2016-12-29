@@ -1,0 +1,11 @@
+{% extends 'base.twig.html' %}
+
+{% block body %}
+    <h1>Liste des offres</h1>
+    <!-- test si empty -->
+    <ol>
+    {% for offre in offres %}
+        <a href="" title="{{ offre.id }}"><li>{{ offre.id }}</li></a>
+    {% endfor %}
+    </ol>
+{% endblock %}
